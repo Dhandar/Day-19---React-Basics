@@ -1,0 +1,117 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: rgba(13, 13, 20, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-family: var(--font-display);
+}
+
+.logo-icon {
+  font-size: 1.6rem;
+  color: var(--clr-accent);
+  line-height: 1;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--clr-text);
+}
+
+.logo-sub {
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  color: var(--clr-accent-light);
+  font-family: var(--font-body);
+}
+
+/* Links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--clr-text-muted);
+  border-radius: var(--radius-pill);
+  transition: color var(--transition), background var(--transition);
+  letter-spacing: 0.03em;
+}
+
+.nav-link:hover {
+  color: var(--clr-text);
+  background: var(--clr-surface-2);
+}
+
+.nav-link.active {
+  color: var(--clr-accent-light);
+  background: rgba(124, 109, 255, 0.12);
+}
+
+/* Cart */
+.navbar-cart {
+  position: relative;
+  background: var(--clr-surface-2);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-sm);
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--transition);
+}
+
+.navbar-cart:hover {
+  border-color: var(--clr-accent);
+}
+
+.cart-icon {
+  font-size: 1.1rem;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--clr-accent);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
