@@ -74,8 +74,6 @@ src/
 │
 ├── components/
 │   └── Navbar.jsx
-│
-├── pages/
 │   ├── HomePage.jsx
 │   ├── ProductsPage.jsx
 │   └── ProductDetailPage.jsx
